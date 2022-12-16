@@ -1,0 +1,15 @@
+{
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.venv": true,
+        "poetry.lock": true,
+    },
+    "python.analysis.typeCheckingMode": "basic",
+    "editor.rulers": [100],
+    "python.formatting.autopep8Args": [
+        "--max-line-length=100"
+    ],
+    "[python]": { "editor.formatOnSave": true },
+    "[markdown]": { "editor.formatOnSave": true },
+    "[json]": { "editor.formatOnSave": true },
+}

@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "cit-to-ia"
+version = "0.1.0"
+description = ""
+authors = ["F1RSTL1GHT"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "cit_to_ia"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ruamel-yaml = "^0.17.21"
+fire = "^0.5.0"
+loguru = "^0.6.0"
+anytree = "^2.8.0"
+pydantic = "^1.10.2"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+cittoia = 'cit_to_ia.__main__:main'
